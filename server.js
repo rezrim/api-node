@@ -23,7 +23,8 @@ var express  = require('express'),
  * MONGOLAB_URI=mongodb://example:example@ds053312.mongolab.com:53312/todolist
  * 'mongodb://example:example@ds053312.mongolab.com:53312/todolist'
  */
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+
+mongoose.connect("mongodb+srv://rezrim:1sampai8@node-api-zazzy.mongodb.net/test?retryWrites=true&w=majority", function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
 });
